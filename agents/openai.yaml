@@ -1,0 +1,4 @@
+interface:
+  display_name: "B2B 供应商榜单与 WordPress 草稿"
+  short_description: "撰写供应商采购榜单，配置官网截图、SEO、摘要和特色图并保存 WordPress 草稿"
+  default_prompt: "使用 $b2b-supplier-article-wordpress，为指定产品和目标市场撰写 B2B 供应商文章，完成截图、SEO、摘要和特色图并保存 WordPress 草稿。"
