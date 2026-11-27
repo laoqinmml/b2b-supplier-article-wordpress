@@ -50,6 +50,14 @@ python scripts/prepare_webp.py cover.png topic-featured.webp --lossy --quality 9
 
 每张首页图紧接对应官网链接，设置说明品牌与页面的 alt text。WordPress 正文使用上传响应的媒体 URL，不能出现本机路径。替换时只改对应引用，保留其他人工编辑，不自动删除旧媒体。
 
+## YouTube 视频（按需）
+
+用户要求配视频时，搜索与主题和目标读者直接相关的公开视频。B2B 采购文章优先选完整的工厂流程、产品说明或采购教育内容，核对标题、频道、时长、发布日期、简介和可见播放页面；避免无关 Shorts、纯广告、无法核实来源的视频。搜索结果只足以形成候选，无法打开观看页时说明核验范围，不绕过登录验证或 CAPTCHA。
+
+将一条最相关视频放在引言后、Quick Answer 或主要比较内容前，让读者能迅速进入主题。用一两句说明视频能帮助理解什么；制造商自有视频只作为背景示例，不能暗示名单中的其他供应商已受审核或背书。文末 Sources 可附标题、频道和视频链接。
+
+优先采用编辑器的 YouTube embed block；若站点自动 oEmbed 会报错，使用显式 YouTube iframe/embed block，避免同时留下会触发自动嵌入的裸 URL。遵守站点允许的 iframe 来源，不绕过安全过滤。保存后回读正文并检查渲染结果确有一个播放器、位置正确且没有重复链接。若只能保留链接，明确说明尚未嵌入播放器。
+
 ## SEO、Excerpt 与 Featured image
 
 正文、SEO 描述、焦点关键词、摘要是不同字段。Meta description 和 Primary/Focus keyword 不作为正文段落展示。确认实际 SEO 插件后映射字段，Rank Math 常用 `rank_math_description` 和 `rank_math_focus_keyword`。
